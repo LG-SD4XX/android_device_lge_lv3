@@ -298,11 +298,6 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia7" value="1" />
     </path>
 
-    <path name="compress-offload-playback2 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback2 bt-sco" />
-    </path>
-
     <path name="compress-offload-playback2 afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia7" value="1" />
     </path>
@@ -319,11 +314,6 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia10" value="1" />
     </path>
 
-    <path name="compress-offload-playback3 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback3 bt-sco" />
-    </path>
-
     <path name="compress-offload-playback3 afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia10" value="1" />
     </path>
@@ -334,11 +324,6 @@
 
     <path name="compress-offload-playback4 bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia11" value="1" />
-    </path>
-
-    <path name="compress-offload-playback4 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback4 bt-sco" />
     </path>
 
     <path name="compress-offload-playback4 afe-proxy">
@@ -353,11 +338,6 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia12" value="1" />
     </path>
 
-    <path name="compress-offload-playback5 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback5 bt-sco" />
-    </path>
-
     <path name="compress-offload-playback5 afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia12" value="1" />
     </path>
@@ -368,11 +348,6 @@
 
     <path name="compress-offload-playback6 bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia13" value="1" />
-    </path>
-
-    <path name="compress-offload-playback6 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback6 bt-sco" />
     </path>
 
     <path name="compress-offload-playback6 afe-proxy">
@@ -387,11 +362,6 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia14" value="1" />
     </path>
 
-    <path name="compress-offload-playback7 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback7 bt-sco" />
-    </path>
-
     <path name="compress-offload-playback7 afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia14" value="1" />
     </path>
@@ -404,11 +374,6 @@
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia15" value="1" />
     </path>
 
-    <path name="compress-offload-playback8 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback8 bt-sco" />
-    </path>
-
     <path name="compress-offload-playback8 afe-proxy">
         <ctl name="AFE_PCM_RX Audio Mixer MultiMedia15" value="1" />
     </path>
@@ -419,11 +384,6 @@
 
     <path name="compress-offload-playback9 bt-sco">
         <ctl name="INTERNAL_BT_SCO_RX Audio Mixer MultiMedia16" value="1" />
-    </path>
-
-    <path name="compress-offload-playback9 bt-sco-wb">
-        <ctl name="Internal BTSCO SampleRate" value="BTSCO_RATE_16KHZ" />
-        <path name="compress-offload-playback9 bt-sco" />
     </path>
 
     <path name="compress-offload-playback9 afe-proxy">
@@ -856,9 +816,8 @@
     <path name="speaker">
         <ctl name="RX3 MIX1 INP1" value="RX1" />
         <ctl name="SPK" value="Switch" />
-        <ctl name="RX3 Digital Volume" value="90" />
-	<ctl name="RX3 HPF Switch" value="1" />
-        <ctl name="RX3 HPF cut off" value="MIN_3DB_100Hz" />
+        <ctl name="RX3 Digital Volume" value="84" />
+        <ctl name="RX3 HPF cut off" value="MIN_3DB_150Hz" />
     </path>
 
     <path name="speaker-mic">
@@ -887,8 +846,8 @@
         <ctl name="HPHL" value="Switch" />
         <ctl name="HPHR" value="Switch" />
         <ctl name="EAR PA Gain" value="POS_6_DB" />
-        <ctl name="RX1 Digital Volume" value="78" />
-        <ctl name="RX2 Digital Volume" value="78" />
+        <ctl name="RX1 Digital Volume" value="75" />
+        <ctl name="RX2 Digital Volume" value="75" />
     </path>
 
     <path name="headset-mic">
@@ -911,25 +870,23 @@
         <ctl name="RX1 MIX2 INP1" value="IIR1" />
     </path>
 
-    <path name="sidetone-headphone">
-        <path name="sidetone-iir" />
-        <ctl name="RX1 MIX2 INP1" value="IIR1" />
-        <ctl name="RX2 MIX2 INP1" value="IIR1" />
-        <ctl name="IIR1 INP1 Volume" value="53" />
+    <path name="sidetone-headphones">
     </path>
 
     <path name="voice-handset">
         <path name="handset" />
+	<path name="sidetone-handset" />
+	<ctl name="IIR1 INP1 Volume" value="64" />
     </path>
 
     <path name="voice-speaker">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="90" />
+        <ctl name="RX3 Digital Volume" value="86" />
     </path>
 
     <path name="voice-speaker-protected-ff">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="90" />
+        <ctl name="RX3 Digital Volume" value="86" />
     </path>
 
     <path name="voice-speaker-mic">
@@ -953,9 +910,9 @@
         <path name="headphones" />
         <path name="speaker" />
         <ctl name="RX3 MIX1 INP2" value="RX2" />
-        <ctl name="RX1 Digital Volume" value="75" />
-        <ctl name="RX2 Digital Volume" value="75" />
-        <ctl name="RX3 Digital Volume" value="88" />
+        <ctl name="RX1 Digital Volume" value="65" />
+        <ctl name="RX2 Digital Volume" value="65" />
+        <ctl name="RX3 Digital Volume" value="84" />
     </path>
 
     <path name="usb-headphones">
@@ -980,8 +937,7 @@
     <path name="camcorder-mic">
         <path name="adc1" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
-        <ctl name="ADC1 Volume" value="4" />
-        <ctl name="DEC1 Volume" value="82" />
+	<ctl name="DEC1 Volume" value="87" />
     </path>
 
     <path name="bt-sco-headset">
@@ -1040,7 +996,6 @@
     <path name="voice-speaker-dmic-ef">
         <path name="speaker-dmic-endfire-reverse" />
         <ctl name="DEC1 Volume" value="87" />
-        <ctl name="DEC2 Volume" value="87" />
     </path>
 
     <path name="voice-rec-dmic-ef">
@@ -1167,7 +1122,7 @@
     </path>
 
 <!--  LGE Add Devices -->
-	<path name="handset-mic-vr">
+    <path name="handset-mic-vr">
         <path name="handset-mic" />
         <ctl name="ADC1 Volume" value="7" />
         <ctl name="DEC1 Volume" value="91" />
@@ -1231,12 +1186,12 @@
 	<!-- Add from p1 !-->
     <path name="bt-sco-and-speaker">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="82" />
+        <ctl name="RX3 Digital Volume" value="94" />
     </path>
 
     <path name="bt-sco-wb-and-speaker">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="82" />
+        <ctl name="RX3 Digital Volume" value="94" />
     </path>
 
     <path name="bt-sco-and-headphones">
@@ -1361,7 +1316,7 @@
 
     <path name="speaker-vc">
         <path name="speaker" />
-        <ctl name="RX3 Digital Volume" value="92" />
+        <ctl name="RX3 Digital Volume" value="84" />
     </path>
 
     <path name="fake_speaker">
@@ -1609,16 +1564,14 @@
 
     <path name="mictest-headset-mic">
         <path name="headset-mic" />
-        <ctl name="ADC1 Volume" value="6" />
-        <ctl name="DEC1 Volume" value="96" />
     </path>
 
     <path name="mictest-submic1">
         <path name="adc3" />
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="IIR1 INP1 MUX" value="DEC1" />
-        <ctl name="ADC3 Volume" value="6" />
-        <ctl name="DEC1 Volume" value="93" />
+        <ctl name="ADC3 Volume" value="7" />
+        <ctl name="DEC1 Volume" value="96" />
     </path>
 
     <!-- No use submic2 and 3 for p1v -->
@@ -1657,8 +1610,8 @@
         <ctl name="ADC2 MUX" value="INP3" />
         <ctl name="ADC1 Volume" value="8" />
         <ctl name="ADC3 Volume" value="8" />
-        <ctl name="DEC1 Volume" value="86" />
-        <ctl name="DEC2 Volume" value="93" />
+        <ctl name="DEC1 Volume" value="91" />
+        <ctl name="DEC2 Volume" value="83" />
     </path>
     <!-- Add mictest-allmic for Factory Test !-->
     <path name="mictest-allmic">
@@ -1707,5 +1660,3 @@
     </path>
 
 </mixer>
-
-
