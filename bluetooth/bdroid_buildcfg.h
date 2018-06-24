@@ -19,7 +19,7 @@
 
 //#define BLUETOOTH_QTI_SW TRUE
 
-#define BTM_DEF_LOCAL_NAME "LG K20 Plus"
+#define BTM_DEF_LOCAL_NAME "LG Aristo"
 
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS 16

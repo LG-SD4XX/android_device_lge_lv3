@@ -17,10 +17,10 @@
 # inherit from common sd4xx-common
 include device/lge/sd4xx-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/lge/lv517
+LOCAL_PATH := device/lge/lv3
 
 # kernel
-TARGET_KERNEL_CONFIG := lineage_lv517_defconfig
+TARGET_KERNEL_CONFIG := lineage_lv3_defconfig
 
 # Filesystem
 BOARD_FLASH_BLOCK_SIZE := 131072 # (BOARD_KERNEL_PAGESIZE * 64)
@@ -41,4 +41,4 @@ TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/lge_touch/lpwg_notify"
 TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
 
 # inherit from the proprietary version
-include vendor/lge/lv517/BoardConfigVendor.mk
+include vendor/lge/lv3/BoardConfigVendor.mk

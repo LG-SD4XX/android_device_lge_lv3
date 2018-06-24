@@ -18,7 +18,7 @@
 set -e
 
 # Required!
-export DEVICE=lv517
+export DEVICE=lv3
 export DEVICE_COMMON=sd4xx-common
 export VENDOR=lge
 
