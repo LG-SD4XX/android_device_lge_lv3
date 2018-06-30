@@ -293,15 +293,6 @@ etc/firmware/a330_pfp.fw
 etc/firmware/a330_pm4.fw
 etc/firmware/a300_pm4.fw
 
-# Fingerprint
-bin/fingerprintd
-lib/hw/fingerprint.msm8937.so
-lib/libfpfactory.so
-lib/libfpfactory_jni.so
-lib/libgf_algo.so
-lib/libgf_ca.so
-lib/libgf_hal.so
-
 # FM
 bin/fm_qsoc_patches
 
