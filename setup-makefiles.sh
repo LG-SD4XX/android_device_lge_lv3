@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=lv517
+DEVICE=lv3
 VENDOR=lge
 
 INITIAL_COPYRIGHT_YEAR=2018
@@ -40,7 +40,7 @@ fi
 setup_vendor "$DEVICE" "$VENDOR" "$LINEAGE_ROOT"
 
 # Copyright headers and guards
-write_headers "lv517"
+write_headers "lv3"
 
 # The standard device blobs
 write_makefiles "$MY_DIR"/proprietary-files.txt true

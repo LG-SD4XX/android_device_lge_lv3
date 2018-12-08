@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/lv517
+DEVICE_PATH := device/lge/lv3
 
 TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 
@@ -22,4 +22,4 @@ TARGET_SPECIFIC_HEADER_PATH += $(DEVICE_PATH)/include
 include $(DEVICE_PATH)/board/*.mk
 
 # Inherit the proprietary files
--include vendor/lge/lv517/BoardConfigVendor.mk
+-include vendor/lge/lv3/BoardConfigVendor.mk

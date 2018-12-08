@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/lge/lv517
+DEVICE_PATH := device/lge/lv3
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -22,7 +22,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay-lineage
 
 # Include device-specific product fragments
-include device/lge/lv517/product/*.mk
+include device/lge/lv3/product/*.mk
 
 # Inherit proprietary files
-$(call inherit-product-if-exists, vendor/lge/lv517/lv517-vendor.mk)
+$(call inherit-product-if-exists, vendor/lge/lv3/lv3-vendor.mk)
